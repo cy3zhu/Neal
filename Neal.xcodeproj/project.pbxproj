@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B17798A629AF45B2006ED9DB /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17798A529AF45B2006ED9DB /* ProgressBar.swift */; };
+		B18F8C5429AFEEB9002699C2 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F8C5329AFEEB9002699C2 /* LogView.swift */; };
+		B18F8C5629B00DCD002699C2 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F8C5529B00DCD002699C2 /* PhotoItem.swift */; };
+		B18F8C5829B013FE002699C2 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F8C5729B013FE002699C2 /* FrameView.swift */; };
 		B1A4071929AEFB1C00BF5048 /* NealApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4071829AEFB1C00BF5048 /* NealApp.swift */; };
-		B1A4071B29AEFB1C00BF5048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4071A29AEFB1C00BF5048 /* ContentView.swift */; };
+		B1A4071B29AEFB1C00BF5048 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4071A29AEFB1C00BF5048 /* TabBar.swift */; };
 		B1A4071D29AEFB2800BF5048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1A4071C29AEFB2800BF5048 /* Assets.xcassets */; };
 		B1A4072029AEFB2800BF5048 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1A4071F29AEFB2800BF5048 /* Preview Assets.xcassets */; };
 		B1A4072A29AEFB2800BF5048 /* NealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4072929AEFB2800BF5048 /* NealTests.swift */; };
 		B1A4073429AEFB2800BF5048 /* NealUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4073329AEFB2800BF5048 /* NealUITests.swift */; };
 		B1A4073629AEFB2800BF5048 /* NealUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4073529AEFB2800BF5048 /* NealUITestsLaunchTests.swift */; };
+		B1E556DD29AF11B30005037C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E556DC29AF11B30005037C /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B17798A529AF45B2006ED9DB /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		B18F8C5329AFEEB9002699C2 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		B18F8C5529B00DCD002699C2 /* PhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
+		B18F8C5729B013FE002699C2 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
 		B1A4071529AEFB1C00BF5048 /* Neal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A4071829AEFB1C00BF5048 /* NealApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NealApp.swift; sourceTree = "<group>"; };
-		B1A4071A29AEFB1C00BF5048 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1A4071A29AEFB1C00BF5048 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		B1A4071C29AEFB2800BF5048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1A4071F29AEFB2800BF5048 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1A4072529AEFB2800BF5048 /* NealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +53,7 @@
 		B1A4072F29AEFB2800BF5048 /* NealUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NealUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A4073329AEFB2800BF5048 /* NealUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NealUITests.swift; sourceTree = "<group>"; };
 		B1A4073529AEFB2800BF5048 /* NealUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NealUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1E556DC29AF11B30005037C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +105,12 @@
 			isa = PBXGroup;
 			children = (
 				B1A4071829AEFB1C00BF5048 /* NealApp.swift */,
-				B1A4071A29AEFB1C00BF5048 /* ContentView.swift */,
+				B1A4071A29AEFB1C00BF5048 /* TabBar.swift */,
+				B1E556DC29AF11B30005037C /* HomeView.swift */,
+				B18F8C5529B00DCD002699C2 /* PhotoItem.swift */,
+				B17798A529AF45B2006ED9DB /* ProgressBar.swift */,
+				B18F8C5329AFEEB9002699C2 /* LogView.swift */,
+				B18F8C5729B013FE002699C2 /* FrameView.swift */,
 				B1A4071C29AEFB2800BF5048 /* Assets.xcassets */,
 				B1A4071E29AEFB2800BF5048 /* Preview Content */,
 			);
@@ -257,8 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1A4071B29AEFB1C00BF5048 /* ContentView.swift in Sources */,
+				B1A4071B29AEFB1C00BF5048 /* TabBar.swift in Sources */,
 				B1A4071929AEFB1C00BF5048 /* NealApp.swift in Sources */,
+				B17798A629AF45B2006ED9DB /* ProgressBar.swift in Sources */,
+				B18F8C5429AFEEB9002699C2 /* LogView.swift in Sources */,
+				B1E556DD29AF11B30005037C /* HomeView.swift in Sources */,
+				B18F8C5829B013FE002699C2 /* FrameView.swift in Sources */,
+				B18F8C5629B00DCD002699C2 /* PhotoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
