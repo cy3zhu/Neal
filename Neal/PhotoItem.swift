@@ -45,9 +45,9 @@ struct PhotoItem: View {
                                     .foregroundColor(Color.black)
                             }
                         }//Calorie Label
-                        ProgressBar(label: "Protein 11g", theme: "ProteinColor", progress: 9, goal: 120)
-                        ProgressBar(label: "Fat 11g", theme: "FatColor", progress: 9, goal: 96)
-                        ProgressBar(label: "Carbs 11g", theme: "CarbColor", progress: 10, goal: 380)
+                        PhotoProgressBar(label: "Protein 11g", theme: "ProteinColor", progress: 9, goal: 120)
+                        PhotoProgressBar(label: "Fat 11g", theme: "FatColor", progress: 9, goal: 96)
+                        PhotoProgressBar(label: "Carbs 11g", theme: "CarbColor", progress: 10, goal: 380)
                     }//Nutrition Card Content
                     .padding(16)
                 }//Nutrition Card

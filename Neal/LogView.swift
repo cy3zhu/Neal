@@ -32,6 +32,7 @@ struct LogView: View {
         }
         
     }
+    
 }
 
 struct LogView_Previews: PreviewProvider {

@@ -17,7 +17,7 @@ struct TabBar: View {
                         .foregroundColor(Color("GreyText"))
                     Text("Home")
                 }
-            Text("Insights")
+            InsightsView()
                 .tabItem{
                     Image("Bar Chart")
                         .renderingMode(.template)
@@ -38,13 +38,21 @@ struct TabBar: View {
                         .foregroundColor(Color("GreyText"))
                     Text("Recipe")
                 }
-            Text("Sharing")
+            TestView()
                 .tabItem{
-                    Image("Friends")
+                    Image(systemName: "testtube.2")
                         .renderingMode(.template)
                         .foregroundColor(Color("GreyText"))
-                    Text("Sharing")
+                    Text("DATA")
                 }
+            
+//           Text("Sharing")
+//                .tabItem{
+//                    Image("Friends")
+//                        .renderingMode(.template)
+//                        .foregroundColor(Color("GreyText"))
+//                    Text("Sharing")
+//              }
         }
         
     }

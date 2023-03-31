@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B17798A629AF45B2006ED9DB /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17798A529AF45B2006ED9DB /* ProgressBar.swift */; };
+		B101ED7929D66F290005229F /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B101ED7829D66F290005229F /* UserDataManager.swift */; };
+		B101ED7B29D6703F0005229F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B101ED7A29D6703F0005229F /* TestView.swift */; };
+		B17798A629AF45B2006ED9DB /* PhotoProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17798A529AF45B2006ED9DB /* PhotoProgressBar.swift */; };
 		B18F8C5429AFEEB9002699C2 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F8C5329AFEEB9002699C2 /* LogView.swift */; };
 		B18F8C5629B00DCD002699C2 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F8C5529B00DCD002699C2 /* PhotoItem.swift */; };
 		B18F8C5829B013FE002699C2 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F8C5729B013FE002699C2 /* FrameView.swift */; };
@@ -18,6 +20,8 @@
 		B1A4072A29AEFB2800BF5048 /* NealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4072929AEFB2800BF5048 /* NealTests.swift */; };
 		B1A4073429AEFB2800BF5048 /* NealUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4073329AEFB2800BF5048 /* NealUITests.swift */; };
 		B1A4073629AEFB2800BF5048 /* NealUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4073529AEFB2800BF5048 /* NealUITestsLaunchTests.swift */; };
+		B1CBD57829C12DC200E7F1AA /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD57729C12DC200E7F1AA /* InsightsView.swift */; };
+		B1CBD57A29C1406500E7F1AA /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD57929C1406500E7F1AA /* GoalsView.swift */; };
 		B1E556DD29AF11B30005037C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E556DC29AF11B30005037C /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B17798A529AF45B2006ED9DB /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		B101ED7829D66F290005229F /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		B101ED7A29D6703F0005229F /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		B17798A529AF45B2006ED9DB /* PhotoProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoProgressBar.swift; sourceTree = "<group>"; };
 		B18F8C5329AFEEB9002699C2 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		B18F8C5529B00DCD002699C2 /* PhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
 		B18F8C5729B013FE002699C2 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
@@ -53,6 +59,8 @@
 		B1A4072F29AEFB2800BF5048 /* NealUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NealUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A4073329AEFB2800BF5048 /* NealUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NealUITests.swift; sourceTree = "<group>"; };
 		B1A4073529AEFB2800BF5048 /* NealUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NealUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1CBD57729C12DC200E7F1AA /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		B1CBD57929C1406500E7F1AA /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
 		B1E556DC29AF11B30005037C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,10 +115,14 @@
 				B1A4071829AEFB1C00BF5048 /* NealApp.swift */,
 				B1A4071A29AEFB1C00BF5048 /* TabBar.swift */,
 				B1E556DC29AF11B30005037C /* HomeView.swift */,
+				B1CBD57929C1406500E7F1AA /* GoalsView.swift */,
 				B18F8C5529B00DCD002699C2 /* PhotoItem.swift */,
-				B17798A529AF45B2006ED9DB /* ProgressBar.swift */,
+				B17798A529AF45B2006ED9DB /* PhotoProgressBar.swift */,
 				B18F8C5329AFEEB9002699C2 /* LogView.swift */,
+				B1CBD57729C12DC200E7F1AA /* InsightsView.swift */,
 				B18F8C5729B013FE002699C2 /* FrameView.swift */,
+				B101ED7829D66F290005229F /* UserDataManager.swift */,
+				B101ED7A29D6703F0005229F /* TestView.swift */,
 				B1A4071C29AEFB2800BF5048 /* Assets.xcassets */,
 				B1A4071E29AEFB2800BF5048 /* Preview Content */,
 			);
@@ -273,8 +285,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1A4071B29AEFB1C00BF5048 /* TabBar.swift in Sources */,
+				B1CBD57829C12DC200E7F1AA /* InsightsView.swift in Sources */,
+				B101ED7B29D6703F0005229F /* TestView.swift in Sources */,
+				B101ED7929D66F290005229F /* UserDataManager.swift in Sources */,
 				B1A4071929AEFB1C00BF5048 /* NealApp.swift in Sources */,
-				B17798A629AF45B2006ED9DB /* ProgressBar.swift in Sources */,
+				B1CBD57A29C1406500E7F1AA /* GoalsView.swift in Sources */,
+				B17798A629AF45B2006ED9DB /* PhotoProgressBar.swift in Sources */,
 				B18F8C5429AFEEB9002699C2 /* LogView.swift in Sources */,
 				B1E556DD29AF11B30005037C /* HomeView.swift in Sources */,
 				B18F8C5829B013FE002699C2 /* FrameView.swift in Sources */,

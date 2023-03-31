@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProgressBar: View {
+struct PhotoProgressBar: View {
     
     var label: String = "Default"
     var theme: String = "OrangeText"
@@ -44,6 +44,6 @@ struct ProgressBar: View {
 
 struct ProgressBar_Previews: PreviewProvider {
     static var previews: some View {
-        ProgressBar().preferredColorScheme(.dark)
+        PhotoProgressBar().preferredColorScheme(.dark)
     }
 }
