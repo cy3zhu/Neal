@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B101ED7929D66F290005229F /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B101ED7829D66F290005229F /* UserDataManager.swift */; };
+		B101ED7929D66F290005229F /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B101ED7829D66F290005229F /* UserData.swift */; };
 		B101ED7B29D6703F0005229F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B101ED7A29D6703F0005229F /* TestView.swift */; };
 		B17798A629AF45B2006ED9DB /* PhotoProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17798A529AF45B2006ED9DB /* PhotoProgressBar.swift */; };
+		B18515C529DBBF4100E393A8 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18515C429DBBF4100E393A8 /* CameraService.swift */; };
+		B18515C729DBCDE400E393A8 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18515C629DBCDE400E393A8 /* CustomCameraView.swift */; };
 		B18F8C5429AFEEB9002699C2 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F8C5329AFEEB9002699C2 /* LogView.swift */; };
 		B18F8C5629B00DCD002699C2 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F8C5529B00DCD002699C2 /* PhotoItem.swift */; };
-		B18F8C5829B013FE002699C2 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F8C5729B013FE002699C2 /* FrameView.swift */; };
+		B18F8C5829B013FE002699C2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F8C5729B013FE002699C2 /* CameraView.swift */; };
+		B199B60C29D6A8C600D507B6 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B199B60B29D6A8C600D507B6 /* GlobalSettings.swift */; };
 		B1A4071929AEFB1C00BF5048 /* NealApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4071829AEFB1C00BF5048 /* NealApp.swift */; };
 		B1A4071B29AEFB1C00BF5048 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4071A29AEFB1C00BF5048 /* TabBar.swift */; };
 		B1A4071D29AEFB2800BF5048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1A4071C29AEFB2800BF5048 /* Assets.xcassets */; };
@@ -20,6 +23,7 @@
 		B1A4072A29AEFB2800BF5048 /* NealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4072929AEFB2800BF5048 /* NealTests.swift */; };
 		B1A4073429AEFB2800BF5048 /* NealUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4073329AEFB2800BF5048 /* NealUITests.swift */; };
 		B1A4073629AEFB2800BF5048 /* NealUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A4073529AEFB2800BF5048 /* NealUITestsLaunchTests.swift */; };
+		B1B1373929D6F6D3008C6DDB /* HealthKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1373829D6F6D3008C6DDB /* HealthKitView.swift */; };
 		B1CBD57829C12DC200E7F1AA /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD57729C12DC200E7F1AA /* InsightsView.swift */; };
 		B1CBD57A29C1406500E7F1AA /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD57929C1406500E7F1AA /* GoalsView.swift */; };
 		B1E556DD29AF11B30005037C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E556DC29AF11B30005037C /* HomeView.swift */; };
@@ -43,12 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B101ED7829D66F290005229F /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		B101ED7829D66F290005229F /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		B101ED7A29D6703F0005229F /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		B17798A529AF45B2006ED9DB /* PhotoProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoProgressBar.swift; sourceTree = "<group>"; };
+		B18515C429DBBF4100E393A8 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		B18515C629DBCDE400E393A8 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		B18F8C5329AFEEB9002699C2 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		B18F8C5529B00DCD002699C2 /* PhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
-		B18F8C5729B013FE002699C2 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		B18F8C5729B013FE002699C2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B199B60B29D6A8C600D507B6 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		B1A4071529AEFB1C00BF5048 /* Neal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A4071829AEFB1C00BF5048 /* NealApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NealApp.swift; sourceTree = "<group>"; };
 		B1A4071A29AEFB1C00BF5048 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -59,6 +66,8 @@
 		B1A4072F29AEFB2800BF5048 /* NealUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NealUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A4073329AEFB2800BF5048 /* NealUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NealUITests.swift; sourceTree = "<group>"; };
 		B1A4073529AEFB2800BF5048 /* NealUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NealUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1B1373729D6F5AD008C6DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B1B1373829D6F6D3008C6DDB /* HealthKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitView.swift; sourceTree = "<group>"; };
 		B1CBD57729C12DC200E7F1AA /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
 		B1CBD57929C1406500E7F1AA /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
 		B1E556DC29AF11B30005037C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -112,6 +121,7 @@
 		B1A4071729AEFB1C00BF5048 /* Neal */ = {
 			isa = PBXGroup;
 			children = (
+				B1B1373729D6F5AD008C6DDB /* Info.plist */,
 				B1A4071829AEFB1C00BF5048 /* NealApp.swift */,
 				B1A4071A29AEFB1C00BF5048 /* TabBar.swift */,
 				B1E556DC29AF11B30005037C /* HomeView.swift */,
@@ -119,9 +129,13 @@
 				B18F8C5529B00DCD002699C2 /* PhotoItem.swift */,
 				B17798A529AF45B2006ED9DB /* PhotoProgressBar.swift */,
 				B18F8C5329AFEEB9002699C2 /* LogView.swift */,
+				B18515C429DBBF4100E393A8 /* CameraService.swift */,
+				B18F8C5729B013FE002699C2 /* CameraView.swift */,
+				B18515C629DBCDE400E393A8 /* CustomCameraView.swift */,
 				B1CBD57729C12DC200E7F1AA /* InsightsView.swift */,
-				B18F8C5729B013FE002699C2 /* FrameView.swift */,
-				B101ED7829D66F290005229F /* UserDataManager.swift */,
+				B1B1373829D6F6D3008C6DDB /* HealthKitView.swift */,
+				B101ED7829D66F290005229F /* UserData.swift */,
+				B199B60B29D6A8C600D507B6 /* GlobalSettings.swift */,
 				B101ED7A29D6703F0005229F /* TestView.swift */,
 				B1A4071C29AEFB2800BF5048 /* Assets.xcassets */,
 				B1A4071E29AEFB2800BF5048 /* Preview Content */,
@@ -286,14 +300,18 @@
 			files = (
 				B1A4071B29AEFB1C00BF5048 /* TabBar.swift in Sources */,
 				B1CBD57829C12DC200E7F1AA /* InsightsView.swift in Sources */,
+				B1B1373929D6F6D3008C6DDB /* HealthKitView.swift in Sources */,
 				B101ED7B29D6703F0005229F /* TestView.swift in Sources */,
-				B101ED7929D66F290005229F /* UserDataManager.swift in Sources */,
+				B101ED7929D66F290005229F /* UserData.swift in Sources */,
 				B1A4071929AEFB1C00BF5048 /* NealApp.swift in Sources */,
+				B199B60C29D6A8C600D507B6 /* GlobalSettings.swift in Sources */,
 				B1CBD57A29C1406500E7F1AA /* GoalsView.swift in Sources */,
+				B18515C529DBBF4100E393A8 /* CameraService.swift in Sources */,
+				B18515C729DBCDE400E393A8 /* CustomCameraView.swift in Sources */,
 				B17798A629AF45B2006ED9DB /* PhotoProgressBar.swift in Sources */,
 				B18F8C5429AFEEB9002699C2 /* LogView.swift in Sources */,
 				B1E556DD29AF11B30005037C /* HomeView.swift in Sources */,
-				B18F8C5829B013FE002699C2 /* FrameView.swift in Sources */,
+				B18F8C5829B013FE002699C2 /* CameraView.swift in Sources */,
 				B18F8C5629B00DCD002699C2 /* PhotoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +474,11 @@
 				DEVELOPMENT_TEAM = 3TAF66J8BX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Neal/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To take pictures of food for meal logging";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To collect calorie expenditure information for net calorie tracking ";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "To collect calorie expenditure information for tracking";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Add Logged foods";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -485,6 +508,11 @@
 				DEVELOPMENT_TEAM = 3TAF66J8BX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Neal/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To take pictures of food for meal logging";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To collect calorie expenditure information for net calorie tracking ";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "To collect calorie expenditure information for tracking";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Add Logged foods";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

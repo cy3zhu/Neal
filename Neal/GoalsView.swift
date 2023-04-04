@@ -8,69 +8,149 @@
 import SwiftUI
 
 struct GoalsView: View {
+    
+    @EnvironmentObject var userData: UserData
+    
     var body: some View {
         ScrollView(){
+            //CARD HEADER
             HStack(){
                 Text("Caloric Goals")
                         .font(.system(size: 17, weight: .bold, design:.default))
                 Spacer()
                 Text("Edit").font(.system(size: 17, weight: .semibold, design:.default))
                     .foregroundColor(.blue)
-                //button placeholder
-                            
-            }.padding(.horizontal,8) //Header
+                    //button placeholder
+            }.frame(width: CONTENTWIDTH)
+            
+            //GOAL CARD
             ZStack(alignment: .top){
                 RoundedRectangle(cornerRadius: 14) //Card Background
                     .fill(Color("CardBackground"))
-                    .frame(width: 358)
+                    .frame(width: CONTENTWIDTH)
+                
                 VStack(alignment: .leading){
-                    VStack(alignment: .leading, spacing: 9){
-                        Text("Consume")
-                            .font(.system(size: 13, weight: .semibold, design:.default))
-                        HStack(alignment: .bottom, spacing: 4){
-                            Text("3300-3500")
-                                .font(.system(size: 20, weight: .bold, design:.default))
-                                .foregroundColor(Color("OrangeText"))
-                                //.frame().background(Color.red)
-                            Text("kcal")
-                                .font(.system(size: 13, weight: .semibold, design:.default))
-                                .foregroundColor(Color("OrangeText"))
-                                //.frame().background(Color.red)
-                                .padding(.bottom, 2)
-                        }
-                    }//Consumption Content
-                    VStack(alignment: .leading, spacing: 4){
-                        Text("Expend")
-                            .font(.system(size: 13, weight: .semibold, design:.default))
-                        ZStack(alignment: .leading){
-                            //background capsule
-                            Capsule()
-                                .fill(Color("GreenText"))
-                                .frame(width: 334, height: 22)
-                                .opacity(0.3)
-                            //Fill Capsule
-                            Capsule()
-                                .fill(Color("GreenText"))
-                                .frame(width: 220 , height: 22)
-                        }//Progress Bar
-                        HStack(){
-                            Text("3400/4500 kcal").font(.system(size: 13, weight: .semibold, design:.default))
-                                .foregroundColor(Color("GreenText"))
-                            Text("1100 cal left").font(.system(size: 13, weight: .semibold, design:.default))
-                                .foregroundColor(Color("SecondaryText"))
-                        }
-                    }//Expenditure Content
-                } .padding(.horizontal, 12 ) .padding(.vertical, 16) //Goal Card content
-            }//Goal Card
+                    CalorieBar(
+                        label: "Consume",
+                        theme: "OrangeText",
+                        progress: userData.caloriesConsumed,
+                        goal: userData.calorieConsumptionGoal,
+                        rangeText: "± 5%",
+                        remainderText: true,
+                        barWidth: 334,
+                        barHeight: 22
+                    ).padding(.bottom, 12)
+                    
+                    CalorieBar(
+                        label: "Expend",
+                        theme: "GreenText",
+                        progress: userData.calorieExpenditure,
+                        goal: userData.calorieExpenditureGoal,
+                        remainderText: true,
+                        barWidth: 334,
+                        barHeight: 22
+                    )
+                }.padding(.horizontal, 12 ) .padding(.vertical, 16)
+            }.padding(.bottom, 10)//Goal Card
+            
+            //CARD HEADER
             HStack(){
-                Text("Insights")
+                Text("Macronutrient goals")
                         .font(.system(size: 17, weight: .bold, design:.default))
                 Spacer()
-                //button placeholder
-            }.padding(.horizontal,8)
-            FoodCard()
+                Text("Edit").font(.system(size: 17, weight: .semibold, design:.default))
+                    .foregroundColor(.blue)
+                    //button placeholder
+            }.frame(width: CONTENTWIDTH)
+            
+            //MACRONUTRIENT CARD
+            ZStack(alignment: .top){
+                RoundedRectangle(cornerRadius: 14) //Card Background
+                    .fill(Color("CardBackground"))
+                    .frame(width: CONTENTWIDTH)
                 
-        }.padding(.horizontal,16)
+                HStack(){
+                    CalorieBar(
+                        label: "Carbs",
+                        theme: "CarbColor",
+                        progress: userData.carbConsumed,
+                        goal: userData.carbGoal,
+                        units: "g",
+                        barWidth: 100,
+                        barHeight: 22
+                    )
+                    CalorieBar(
+                        label: "Protein",
+                        theme: "ProteinColor",
+                        progress: userData.proteinConsumed,
+                        goal: userData.proteinGoal,
+                        units: "g",
+                        barWidth: 100,
+                        barHeight: 22
+                    )
+                    CalorieBar(
+                        label: "Fat",
+                        theme: "FatColor",
+                        progress: userData.fatConsumed,
+                        goal: userData.fatGoal,
+                        units: "g",
+                        barWidth: 100,
+                        barHeight: 22
+                    )
+                }.padding(.horizontal, 12 ) .padding(.vertical, 16)
+            }.padding(.bottom, 10)
+            
+            //CARD HEADER
+            HStack(){
+                Text("Micronutrient limits")
+                        .font(.system(size: 17, weight: .bold, design:.default))
+                Spacer()
+                Text("Edit").font(.system(size: 17, weight: .semibold, design:.default))
+                    .foregroundColor(.blue)
+                    //button placeholder
+            }.frame(width: CONTENTWIDTH)
+            
+            //MICRONUTRIENT CARD
+            ZStack(alignment: .top){
+                RoundedRectangle(cornerRadius: 14) //Card Background
+                    .fill(Color("CardBackground"))
+                    .frame(width: CONTENTWIDTH)
+                
+                HStack(){
+                    CalorieBar(
+                        label: "Sugar",
+                        theme: "MicroColor",
+                        progress: userData.sugarConsumed,
+                        goal: userData.sugarGoal,
+                        units: "mg",
+                        barWidth: 100,
+                        barHeight: 22
+                    )
+                    CalorieBar(
+                        label: "Sodium",
+                        theme: "MicroColor",
+                        progress: userData.sodiumConsumed,
+                        goal: userData.sodiumGoal,
+                        units: "mg",
+                        barWidth: 100,
+                        barHeight: 22
+                    )
+                    CalorieBar(
+                        label: "Cholesterol",
+                        theme: "MicroColor",
+                        progress: userData.cholesterolConsumed,
+                        goal: userData.cholesterolGoal,
+                        units: "mg",
+                        barWidth: 100,
+                        barHeight: 22
+                    )
+                }.padding(.horizontal, 12 ) .padding(.vertical, 16)
+                
+            }.padding(.bottom, 10)
+                
+        }
+        .padding(16)
+        .navigationBarTitle("Daily Goals", displayMode: .inline)
     }
 }
 
@@ -91,7 +171,7 @@ struct FoodCard: View{
         ZStack(alignment: .topLeading){
             RoundedRectangle(cornerRadius: 14) //Card Background
                 .fill(Color("CardBackground"))
-                .frame(width: 358, height: 128)
+                .frame(width: CONTENTWIDTH, height: 128)
             VStack(){
                 HStack(alignment: .top, spacing: 16){
                     ZStack(){

@@ -23,7 +23,7 @@ struct PhotoItem: View {
             Image(image)
                 .resizable()
                 .cornerRadius(14)
-                .frame(width: 358, height:460)
+                .frame(width: CONTENTWIDTH, height:460)
             VStack(alignment: .leading){
                 Text(time)//photo time
                     .font(.title3)
@@ -31,7 +31,7 @@ struct PhotoItem: View {
                     .padding(16)
                 Spacer()
                 ZStack(alignment: .leading){
-                    Rectangle().fill(Color.black).frame(width: 358, height: 80).opacity(0.5)
+                    Rectangle().fill(Color.black).frame(width: CONTENTWIDTH, height: 80).opacity(0.5)
                     HStack(spacing: 16){
                         ZStack(){
                             RoundedRectangle(cornerRadius: 8).fill(Color("OrangeText")).frame(width: 48, height: 48)
@@ -52,7 +52,7 @@ struct PhotoItem: View {
                     .padding(16)
                 }//Nutrition Card
             }
-        }//Photo Card
+        }.frame(width: CONTENTWIDTH, height:460) //Photo Card
     }
 }
 

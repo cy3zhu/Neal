@@ -53,7 +53,7 @@ struct TabBar: View {
 //                        .foregroundColor(Color("GreyText"))
 //                    Text("Sharing")
 //              }
-        }
+        }.opacity(50)
         
     }
 }

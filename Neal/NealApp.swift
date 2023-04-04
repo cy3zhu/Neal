@@ -9,10 +9,15 @@ import SwiftUI
 
 @main
 struct NealApp: App {
+    
+    @StateObject var userData = UserData()
+    
     var body: some Scene {
         WindowGroup {
-            //TestView1()
+            
+            //LogView()
             TabBar()
+                .environmentObject(userData)
         }
     }
 }
